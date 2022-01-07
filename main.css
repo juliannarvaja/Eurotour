@@ -1,0 +1,56 @@
+:root {
+    --color: linear-gradient(90deg, rgba(85,72,235,1) 0%, rgba(221,150,195,1) 100%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 11px;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+    
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: rgb(138, 130, 230);
+    background: linear-gradient(90deg, rgb(127, 117, 240) 0%, rgb(187, 151, 174) 100%);
+    min-height: calc(100vh - 100px);
+    margin: 50px;
+    background-attachment: fixed;
+    letter-spacing: -1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 5px 0;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+a {
+    color: white;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #AEC6CF;
+}
+
+.feature p {
+    color: black;
+}

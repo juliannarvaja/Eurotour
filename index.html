@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>EU23'</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <header class="principal">
+                <h1>EUROTOUR 2023</h1>
+                <p>3 weeks through the world's prettiest spots</p>
+                <p>Will you join us?</p>
+            </header>
+            <div class="entrada entrada1">
+                <p>Golden Pack 🥇</p>
+                <p class="price">6500USD</p>
+                <p>SPAIN - ITALY - FRANCE - GERMANY - UK</p>
+            </div>
+            <div class="entrada entrada2">
+                <p>Silver Pack 🥈</p>
+                <p class="price">4600USD</p>
+                <p>SPAIN - ITALY - FRANCE</p>
+            </div>
+        </div>
+        <nav class="menu">
+            <button aria-expanded="false" aria-controls="menu-list">
+                <span class="open">&#9776;</span>
+                <span class="close">&#9747;</span>
+                Menu
+            </button>
+            <ul id="menu-list">
+                <li>
+                    <a href="">About the Eurotour</a>
+                </li>
+                <li>
+                    <a href="">Cities to be visited</a>
+                </li>
+
+                <li>
+                    <a href="">Services included</a>
+                </li>
+
+                <li>
+                    <a href="">Additional information</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="features">
+            <div class="feature">
+                <span class="icon">🛫</span>
+                <h3>Fly as a true globetrotter</h3>
+                <p>Only the best out of the best airlines. Fly safe, fly comfy.</p>
+                <p>Few to no scales.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">🍕
+                </span>
+                <h3>Enjoy the best of the local food</h3>
+                <p>Restaurant visits included.
+                </p>
+                <p>Get to taste world-level fine wine.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">📋
+                </span>
+                <h3>All papers on us</h3>
+                <p>Forget about visa-related struggles.</p>
+                <p>We do it all for you.</p>
+            </div>
+
+            <div class="feature">
+                <span class="icon">💰</span>
+                <h3>Pay less, get more</h3>
+                <p>Ask for our couple and family packs.</p>
+                <p>Babies are invited for free!</p>
+            </div>
+        </section>
+
+        <section class="about">
+            <video src="/assets/Europe In one minute.mp4" loop autoplay></video>
+            <div class="about__details">
+                <h2></h2>
+                <p></p>
+                <p></p>
+                <button>+ Info &#10142;</button>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>A trip in pictures</h2>
+            <img src="/assets/paris.jpg" alt="">
+            <img src="/assets/rome.jpg" alt="">
+            <img src="/assets/madrid.jpg" alt="">
+            <img src="/assets/berlin.jpg" alt="">
+            <img src="/assets/london.jpg" alt="">
+            <img src="/assets/lyon.jpg" alt="">
+            <img src="/assets/hamburg.jpg" alt="">
+            <img src="/assets/milan.jpg" alt="">
+            <img src="/assets/barcelona.jpg" alt="">
+            <img src="/assets/oxford.jpg" alt="">
+        </section>
+    </div>
+    <script>
+        const navButton = document.querySelector('button[aria-expanded]');
+
+        const doThis = ({target}) => {
+            if (target.getAttribute('aria-expanded') === 'false') {
+                target.setAttribute('aria-expanded', 'true');
+            } else {
+                target.setAttribute('aria-expanded', 'false');
+            }
+        }
+
+        navButton.addEventListener('click', doThis)
+    </script>
+</body>
+</html>
