@@ -235,6 +235,10 @@ img {
         'entrada1'
         'entrada2';
     }
+
+    .footer {
+        margin-left: 50%;
+    }
 }
 
 button {
@@ -247,4 +251,16 @@ button:hover {
 
 button:active {
     font-style: italic;
+}
+
+footer {
+    align-items: center;
+    text-align: center;
+    background: #AEC6CF;
+    color: white;
+    padding: 20px;
+    margin: 30px auto;
+    font-weight: 100;
+    border-radius: 15%;
+    width: 250px;
 }
